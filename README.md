@@ -24,12 +24,12 @@ More information about NuGet package avaliable at
 
 ```xml
 <target xsi:type="PG"
-      name="PGLog"
-      tableName="testTable"
-      connectionString="User ID=postgres;Password=postgres;Host=localhost;Port=5432;Database=testDb;Pooling=true;">
-      <field name="id" layout="${guid:format=D}" pgType="Guid"/>
-      <field name="d" layout="${date}" pgType="DateTime" />
-      <field name="msg" layout="${message}" />
-    </target>
+  name="PGLog"
+  tableName="testTable"
+  connectionString="User ID=postgres;Password=postgres;Host=localhost;Port=5432;Database=testDb;Pooling=true;">
+  <field name="id" layout="${guid:format=D}" pgType="Guid"/>
+  <field name="d" layout="${date}" pgType="DateTime" />
+  <field name="msg" layout="${message}" />
+</target>
 ```
 
