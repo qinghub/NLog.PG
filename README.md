@@ -23,16 +23,13 @@ More information about NuGet package avaliable at
 #### NLog.config target
 
 ```xml
-<target xsi:type="Mongo"
-        name="mongoDefault"
-        connectionString="mongodb://localhost/Logging"
-        collectionName="DefaultLog"
-        cappedCollectionSize="26214400">
-  <property name="ThreadID" layout="${threadid}" bsonType="Int32" />
-  <property name="ThreadName" layout="${threadname}" />
-  <property name="ProcessID" layout="${processid}" bsonType="Int32" />
-  <property name="ProcessName" layout="${processname:fullName=true}" />
-  <property name="UserName" layout="${windows-identity}" />
-</target>
+<target xsi:type="PG"
+      name="PGLog"
+      tableName="testTable"
+      connectionString="User ID=postgres;Password=postgres;Host=localhost;Port=5432;Database=testDb;Pooling=true;">
+      <field name="id" layout="${guid:format=D}" pgType="Guid"/>
+      <field name="d" layout="${date}" pgType="DateTime" />
+      <field name="msg" layout="${message}" />
+    </target>
 ```
 
