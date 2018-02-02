@@ -10,11 +10,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NLog.PG\NLog.PG.csproj" />
+    <PackageReference Include="NLog.PG" Version="1.0.0-rc01" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="nlog.config">
+    <None Update="NLog.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
