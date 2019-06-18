@@ -12,7 +12,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="NLog" Version="4.5.0-rc04" />
+    <PackageReference Include="NLog" Version="4.6.5" />
     <PackageReference Include="Npgsql" Version="3.2.6" />
   </ItemGroup>
 

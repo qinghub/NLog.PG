@@ -1,7 +1,8 @@
-﻿using System;
+﻿using NLog;
+using System;
 
-namespace NLog.PG.ConsoleTest
-{
+namespace aaa
+{ 
     class Program
     {
         private static readonly Logger _logger = LogManager.GetCurrentClassLogger();
